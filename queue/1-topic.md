@@ -6,6 +6,8 @@ This data structure is FIFO (First In, First Out). When thinking about this data
 
 When removing an item from a queue, you will remove the item that was added first or the item that has been in the queue the longest. When adding to the queue, the item being added will always be added on the end and won't be removed until all the items preceding it have been removed.
 
+![Demonstration of how a queue works](queue.png)
+
 ## Common Operations
 
 **_enqueue(value):_**

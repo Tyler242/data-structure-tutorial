@@ -141,3 +141,72 @@ Ticket 7 received
 From the result we can see how using a queue in this scenario makes it possible for us to store data that needs to be operated on but must wait for our program to complete it's current operation.
 
 ## Problem
+
+You are building a program to help a company manage tasks. They would like a program that they can add tasks that need to completed for each person, and as they are completed they are removed from the list of tasks to be completed. Implement a queue to solve this issue. Here are a few requirements:
+
+- Adding a task should add it to the end of the queue.
+- Completing a task should remove the first item from the queue.
+- Function to get the current number of tasks in the queue.
+- Function that will display each task in the queue
+
+Some code is provided for you to start with:
+
+```python
+print('Task Manager 1.0')
+done = False
+
+
+def add_task(task):
+    """
+        Add a task to the end of the queue
+    """
+    pass
+
+
+def complete_task():
+    """
+        Remove the next task in the queue
+    """
+    pass
+
+
+def total_tasks():
+    """
+        Return the size of the queue
+    """
+    pass
+
+
+def display_queue():
+    """
+        Display each task in the queue
+    """
+    pass
+
+
+while not done:
+    print('1. Add task')
+    print('2. Complete next task')
+    print('3. View total number of tasks')
+    print('4. View queue')
+    print('5. Quit')
+
+    option = int(input('Enter a number (1-4)\n> '))
+
+    if option == 1:
+        task_name = input('Enter name of task: ')
+        add_task(task_name)
+    elif option == 2:
+        complete_task()
+    elif option == 3:
+        total = total_tasks()
+        print(total)
+    elif option == 4:
+        display_queue()
+    elif option == 5:
+        print('goodbye')
+        done = True
+
+```
+
+You can find a possible solution here: [Solution](url.com)

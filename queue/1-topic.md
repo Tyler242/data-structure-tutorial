@@ -149,7 +149,7 @@ You are building a program to help a company manage tasks. They would like a pro
 - Adding a task should add it to the end of the queue.
 - Completing a task should remove the first item from the queue.
 - Function to get the current number of tasks in the queue.
-- Function that will display each task in the queue
+- Function that will display each task in the queue.
 
 Some code is provided for you to start with:
 

@@ -13,7 +13,7 @@ When removing an item from a queue, you will remove the item that was added firs
 **_enqueue(value):_**
 This operation adds an item to the end of the queue. The time taken to perform this operation is O(1) since we are simply adding an item to the end of the queue.
 
-**_dequeue():_** This operation removes the first item from the queue. This should be the item that has been in the queue the longest. The time taken to perform this operation is O(n) since we must remove the first item from the queue and move each item 'forward.'
+**_dequeue():_** This operation removes the first item from the queue. This should be the item that has been in the queue the longest. The time taken to perform this operation is O(n) if you are using an array to implement a queue. This is because we must remove the first item from the array and move each item 'forward.' However, when using a Linked list to implement a queue, this operation becomes O(1) since we only need to update a few pointers.
 
 **_size():_** This operation returns the size of the queue. The time taken for this operation is O(1).
 

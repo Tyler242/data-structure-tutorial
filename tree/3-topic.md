@@ -9,9 +9,31 @@ Here's an example of a simple tree with some important keywords:
 
 In this image we have a simple tree that stores letters of the alphabet. The root is the first element of the tree and in this case it is the letter I. This tree is organized in such a way so that any letter that comes before I in the alphabet always goes to the left of the node being evaluated. For example, if I wanted to add the letter B (which is absent) I would start at the root and ask "does A come before or after I in the alphabet?" Since it comes after, I would move to the left child of the letter I which is the letter E. I would ask the same question again all the way till I got to the letter A. Here I would ask the same question but the response would be different. B comes before A in the alphabet so B would be placed as the right child of A. This kind of tree is relatable to a Binary Search Tree. The main difference is that a BST is often filled with numbers instead of letters so the comparisons are greater than or less than instead of before or after.
 
-You may have a different structure to your tree depending on how you set up the logic.
+You may have a different structure to your tree depending on how you set up the logic. Two basic types of trees are:
+
+- Binary Search Tree: Places values that are less than the root to the left and values that are greater to the right.
+
+- Balanced Binary Search Tree: This tree is a Binary Search Tree that has been balanced, meaning that the left and right subtrees do not have a height difference greater than 1. This can be very useful for searching for stored values quickly.
 
 ## Common Operations:
+
+These are some common operations that are helpful to know when working with a tree.
+
+**_insert(value):_** This operation allows you to add a value into the tree. It will search the tree using recursion to find the position it fits in based on the structure of the tree. This operation is O(log n) since the tree is essentially being divided in half with each recursive call.
+
+**_remove(value):_** This operation will remove a node with the given value from the tree. It also searches the tree for this value using recursion. The time complexity of this operation is O(log n) since it divides the tree or sub-tree it's searching in half with each recursive call.
+
+**_contains(value):_** This function is used to determine whether a given value is within the tree. Just like _insert(value)_ and _remove(value)_ it searches through the tree using recursion and has time complexity of O(log n).
+
+**_traverse_forward():_** This operation will recursively move through the entire tree starting with the left-most subtree and moving right. The time complexity of this operation is O(n) since it will visit every node within the tree.
+
+**_traverse_reverse():_** This operation will recursively move through the entire tree starting with the right-most subtree and moving left. The time complexity of this operation is O(n) since it will visit every node within the tree.
+
+**_height(node):_** This operation returns the height of a given node within the tree. When given the root of the tree it will return the height of the tree. This could be useful to know when ebalancing is needed. The time complexity for this function is O(n) since it will visit every node under it to determine which side of the tree is higher.
+
+**_size():_** This operation will return the total size of the tree. Since this is often stored within the tree itself, the time complexity is O(1).
+
+**_empty():_** This operation will return true if the root is none and false if there is a node found at the root. This operation is O(1) because you only need to check the root.
 
 ## Example
 

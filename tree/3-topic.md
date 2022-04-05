@@ -126,6 +126,19 @@ for word in alphabet_tree:
 
 ```
 
+Result:
+
+```
+No is already in tree.
+Apple
+Banana
+Llama
+Middle
+No
+Oregon
+Zoo
+```
+
 ## Problem
 
 Use a tree data structure to construct a method for saving students profiles that include their name and the grade they have received. Build a balancing system so that the mean grade is always the root of the tree making the tree balanced. A few requirements to keep in mind:
